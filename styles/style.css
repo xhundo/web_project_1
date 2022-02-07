@@ -1,4 +1,11 @@
-/* Add your class here */
+.page {
+  min-width: 1100px;
+  max-width: 1600;
+  margin: 0 auto;
+  font-family: "Helveltica Neue", Arial, Sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 .header {
   height: 100vh;
@@ -13,13 +20,21 @@
 
 .nav {
   /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
+  width: 196px;
+  height: 60px;
 }
 
 .nav-links {
+  display: flex;
   margin-top: 8px;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -29,22 +44,31 @@
 }
 
 /* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
   font-weight: 500;
   line-height: 76px;
   margin: 150px 0 0;
+  max-width: 544px;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
+  max-width: 465px;
 }
 
 .header__image {
   /* Write styles here */
+  position: absolute;
+  top: 135px;
+  right: 20px;
+  max-width: 636px;
   z-index: 1;
 }
 
@@ -66,6 +90,9 @@
 }
 
 /* Add the hover state styles for .header__link here */
+.header__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   color: #838383;
@@ -93,12 +120,22 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff-cards {
+  max-width: 760px;
+  margin: 68px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  width: 360px;
+  height: 420px;
 }
 
 .card__content {
@@ -173,10 +210,14 @@
 
 .event-info__icon_calendar {
   background-image: url(../images/icon_calendar.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_pin {
   background-image: url(../images/icon_pin.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__text {
@@ -197,66 +238,79 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
-  /* flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
-  position: relative; */
+  position: relative;
 }
 
 .events__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person {
-  /* position: absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px; */
+  gap: 10px;
 }
 
 .person_name_feynman {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_cannon {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 18px;
+  right: 216px;
 }
 
 .person_name_mitchell {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person__image_size_l {
-  /* width: 140px; */
+  width: 140px;
 }
 
 .person__image_size_m {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .person__image_size_s {
-  /* width: 80px; */
+  width: 80px;
 }
 
 .person__caption {
-  /* text-align: center;
+  text-align: center;
   font-size: 14px;
-  margin: 0; */
+  margin: 0;
 }
 
 .membership {
@@ -278,11 +332,16 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flexbox-basis: 220px;
   /* Add styles */
 }
 
 .step {
   /* Add styles */
+  width: 220px;
 }
 
 .step__title {
@@ -314,6 +373,8 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
+  max-width: 154px;
+  margin: 0;
 }
 
 .about__content {
@@ -321,9 +382,11 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  margin: 0;
 }
 
 .about__paragraph {
+  margin: 0 0 32px 0;
 }
 
 .about__circle {
@@ -331,6 +394,9 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  bottom: 191px;
+  left: 91px;
 }
 
 .footer {
