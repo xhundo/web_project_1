@@ -1,6 +1,6 @@
 .page {
   min-width: 1100px;
-  max-width: 1600;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: "Helveltica Neue", Arial, Sans-serif;
   font-size: 16px;
@@ -335,7 +335,7 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  flexbox-basis: 220px;
+  flex-basis: 220px;
   /* Add styles */
 }
 
@@ -367,6 +367,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
 }
 
 .about__title {
@@ -374,7 +375,7 @@
   line-height: 30px;
   font-weight: 500;
   max-width: 154px;
-  margin: 0;
+  z-index: 1;
 }
 
 .about__content {
@@ -382,11 +383,12 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  margin: 0;
+  margin-left: 120px;
+  z-index: 2;
 }
 
 .about__paragraph {
-  margin: 0 0 32px 0;
+  margin: 20px 0 32px;
 }
 
 .about__circle {
@@ -395,24 +397,31 @@
   height: 495px;
   border-radius: 50%;
   position: absolute;
-  bottom: 191px;
-  left: 91px;
+  top: -191px;
+  left: -91px;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 57px 102px 60px 80px;
 }
 
 .footer__columns {
+  display: flex;
 }
 
 .footer__column_hours {
+  margin-left: auto;
 }
 
 .footer__column_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  width: 153px;
 }
 
 .footer__list {
@@ -423,9 +432,12 @@
 }
 
 .footer__list-item {
+  margin-bottom: 20px;
 }
 
 .footer__column-heading {
+  font-size: 16px;
+  margin: 0px 0px 20px;
 }
 
 .footer__column-link {
@@ -435,8 +447,14 @@
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
+  margin-right: 6px;
 }
 
 .footer__copyrights {
+  margin: 0;
 }
