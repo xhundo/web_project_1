@@ -30,7 +30,7 @@
   height: 60px;
 }
 
-.nav-links {
+.nav__links {
   display: flex;
   margin-top: 8px;
   align-items: center;
@@ -96,6 +96,7 @@
 
 .header__address {
   color: #838383;
+  font-style: normal;
 }
 
 .staff {
@@ -122,7 +123,7 @@
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff-cards {
   max-width: 760px;
-  margin: 68px auto;
+  margin: 68px auto 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -206,18 +207,16 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_calendar {
   background-image: url(../images/icon_calendar.svg);
-  width: 24px;
-  height: 24px;
 }
 
 .event-info__icon_pin {
   background-image: url(../images/icon_pin.svg);
-  width: 24px;
-  height: 24px;
 }
 
 .event-info__text {
@@ -335,13 +334,12 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-basis: 220px;
   /* Add styles */
 }
 
 .step {
   /* Add styles */
-  width: 220px;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -376,6 +374,7 @@
   font-weight: 500;
   max-width: 154px;
   z-index: 1;
+  margin: 0;
 }
 
 .about__content {
@@ -388,7 +387,11 @@
 }
 
 .about__paragraph {
-  margin: 20px 0 32px;
+  margin: 0 0 32px 0;
+}
+
+.about__paragraph:nth-of-type(3n) {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -397,7 +400,7 @@
   height: 495px;
   border-radius: 50%;
   position: absolute;
-  top: -191px;
+  top: -121px;
   left: -91px;
 }
 
